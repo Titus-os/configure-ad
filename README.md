@@ -24,10 +24,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create a Resource Group, Virtual Network, and VMs (DC-1 and Client-1) with DC-1’s NIC Set to Static IP and Client-1’s DNS Set to DC-1’s Private IP  
+- Install Active Directory Domain Services on DC-1 and Promote It as a Domain Controller for mydomain.com  
+- Join Client-1 to the mydomain.com Domain and Verify in ADUC
+- Configure Group Policy for Account Lockout Threshold (5 Attempts) and Observe Account Lockout 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Creating a resource group, a virtual network (VNet), and two VMs (DC-1 as Windows Server 2022 and Client-1 as Windows 10) in the same VNet/subnet, setting DC-1’s NIC to a static private IP, and configuring Client-1’s DNS to DC-1’s private IP is critical. This establishes the Azure infrastructure for the AD environment, ensuring stable communication between the domain controller (DC) and client, with DNS settings enabling domain joining and AD functionality.
 </p>
 <br />
 
@@ -43,7 +43,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Installing Active Directory Domain Services (AD DS) on DC-1 and promoting it as a domain controller for a new forest (mydomain.com) is essential. This step sets up the core AD environment, enabling centralized user and computer management, authentication, and policy enforcement, which are the backbone of the lab’s objectives.
 </p>
 <br />
 
@@ -51,6 +51,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Configuring Group Policy to set an account lockout threshold of 5 failed login attempts, attempting to log in 6 times with a bad password, and observing the lockout in AD is vital. This step demonstrates AD’s security capabilities, showing how policies enforce account protection and how administrators manage lockouts, a common real-world scenario.
+
+
 </p>
 <br />
