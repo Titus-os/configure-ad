@@ -32,7 +32,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1613" height="72" alt="image" src="https://github.com/user-attachments/assets/7f318266-2834-4226-9217-639608192988" />
+<img width="586" height="375" alt="image" src="https://github.com/user-attachments/assets/16144752-beb6-4af9-ac53-51a64dd739a6" />
+<img width="972" height="486" alt="image" src="https://github.com/user-attachments/assets/51f5ba10-abfb-4d12-b8a9-df10fe00dcf2" />
+<img width="441" height="304" alt="image" src="https://github.com/user-attachments/assets/070cb938-7a4c-4856-a781-a9e818261239" />
 </p>
 <p>
 Creating a resource group, a virtual network (VNet), and two VMs (DC-1 as Windows Server 2022 and Client-1 as Windows 10) in the same VNet/subnet, setting DC-1’s NIC to a static private IP, and configuring Client-1’s DNS to DC-1’s private IP is critical. This establishes the Azure infrastructure for the AD environment, ensuring stable communication between the domain controller (DC) and client, with DNS settings enabling domain joining and AD functionality.
