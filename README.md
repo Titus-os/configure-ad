@@ -43,7 +43,7 @@ Creating a resource group, a virtual network (VNet), and two VMs (DC-1 as Window
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1884" height="697" alt="image" src="https://github.com/user-attachments/assets/035742f0-50a1-432c-9d39-8d2d7961a597" />
 </p>
 <p>
 Installing Active Directory Domain Services (AD DS) on DC-1 and promoting it as a domain controller for a new forest (mydomain.com) is essential. This step sets up the core AD environment, enabling centralized user and computer management, authentication, and policy enforcement, which are the backbone of the lab’s objectives.
