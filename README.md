@@ -51,7 +51,8 @@ Installing Active Directory Domain Services (AD DS) on DC-1 and promoting it as 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1622" height="924" alt="image" src="https://github.com/user-attachments/assets/4e04443a-7eed-4cb1-ae42-1372bde32110" />
+<img width="1050" height="665" alt="image" src="https://github.com/user-attachments/assets/4552a354-5926-479a-b9b4-cc78183d658a" />
 </p>
 <p>
 Configuring Group Policy to set an account lockout threshold of 5 failed login attempts, attempting to log in 6 times with a bad password, and observing the lockout in AD is vital. This step demonstrates AD’s security capabilities, showing how policies enforce account protection and how administrators manage lockouts, a common real-world scenario.
